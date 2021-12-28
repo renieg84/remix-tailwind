@@ -59,6 +59,7 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="rounded-full absolute top-4 right-4 lg:hidden bg-blue-400 p-2 z-50"
+          aria-label="Toggle sidebar"
         >
           {sidebarOpen ? (
             <HiX className="h-6 w-6 text-white" />
